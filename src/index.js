@@ -8,4 +8,8 @@ app.use(express.json());
 app.use(cors());
 app.use(routes);
 
-app.listen(80);
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log(`Rodando na porta ${port}`);
+});
