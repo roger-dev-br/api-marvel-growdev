@@ -7,7 +7,7 @@ const routes = new Router();
 routes.use(logMid);
 
 routes.get('/', (req, res) => {
-    res.send('Rota principal');
+    res.send('Rota principal v2');
 });
 
 routes.get('/personagens', marvelController.index);
